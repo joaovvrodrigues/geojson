@@ -175,7 +175,7 @@ class GeoJson {
     print("Processing");
     _processFeatures(dataToProcess: dataToProcess, sink: _feats.sink);
     print("Closing");
-    await _sub.cancel();
+    // await _sub.cancel();
     unawaited(_feats.close());
   }
 
